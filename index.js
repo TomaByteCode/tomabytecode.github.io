@@ -12,20 +12,20 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-function calculateTimeUntilChristmas() {
+function calculateTimeUntilNewYear() {
 	const today = new Date();
 	const year = today.getFullYear();
-	const christmasDate = new Date(year, 11, 24, 0, 0, 0); // December 24th at midnight
+	const newYear = new Date(year, 11, 1, 0, 0, 0); // January 1th at midnight
 
-	// If it's past Christmas, set Christmas to next year
-	if (today > christmasDate) {
-		christmasDate.setFullYear(year + 1);
+	// If it's past New Year, set New Year to next year
+	if (today > newYear) {
+		newYear.setFullYear(year + 1);
 	}
 
-	const difference = christmasDate - today;
+	const difference = newYear - today;
 
-	const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-	const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const days = Math.floor(difference / (1000 * 60 * 60 * 1));
+	const hours = Math.floor((difference % (1000 * 60 * 60 * 1)) / (1000 * 60 * 60));
 	const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 	const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
@@ -33,9 +33,9 @@ function calculateTimeUntilChristmas() {
 }
 
 function updateCountdown() {
-	const { days, hours, minutes, seconds } = calculateTimeUntilChristmas();
+	const { days, hours, minutes, seconds } = calculateTimeUntilNewYear();
 	document.getElementById('countdown').textContent = 
-		`${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until Christmas!`;
+		`${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until New Year!`;
 }
 
 setInterval(updateCountdown, 1000);
