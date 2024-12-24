@@ -13,12 +13,14 @@ window.addEventListener('scroll', () => {
 });
 
 function calculateTimeUntilNewYear() {
-	const today = new Date();
-	const year = today.getFullYear();
-	const newYear = new Date(year + 1, 0, 1); // January 1st at midnight
+	const now = new Date();
+	const year = now.getFullYear();
+	const newYear = new Date(year + 1, 0, 1); // 1. ledna příštího roku o půlnoci
 
-	const difference = newYear - today;
+	// Zjistí rozdíl v milisekundách
+	const difference = newYear - now;
 
+	// Přepočet na dny, hodiny, minuty a sekundy
 	const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 	const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
@@ -29,10 +31,16 @@ function calculateTimeUntilNewYear() {
 
 function updateCountdown() {
 	const { days, hours, minutes, seconds } = calculateTimeUntilNewYear();
-	document.getElementById('countdown').textContent =
-		`${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until New Year!`;
+	const countdownElement = document.getElementById('countdown');
+
+	if (countdownElement) {
+		countdownElement.textContent = 
+			`${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until New Year!`;
+	}
 }
 
+// Aktualizace každou sekundu
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
 
