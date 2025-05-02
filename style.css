@@ -295,19 +295,4 @@ footer {
 }
 
 
-.newyear_countdown {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: 50px 0;
-	padding: 50px;
-	background-color: #fff;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	border-radius: 30px;
-}
 
-#countdown {
-	font-size: 2rem;
-	margin-top: 20px;
-}
