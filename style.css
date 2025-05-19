@@ -1,4 +1,4 @@
-/* Reset základních stylů */
+/* Reset základních stylů
 * {
 	margin: 0;
 	padding: 0;
@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-	width: 95%; /* Větší šířka pro počítače */
-	max-width: 1600px; /* Omezíme maximální šířku na velkých obrazovkách */
+	width: 95%; Větší šířka pro počítače 
+	max-width: 1600px; Omezíme maximální šířku na velkých obrazovkách 
 	margin: 0 auto;
 }
 
@@ -28,15 +28,15 @@ header {
 }
 
 header h1 {
-	font-size: 4rem; /* Značně větší text pro nadpis */
+	font-size: 4rem; Značně větší text pro nadpis 
 }
 
 #theme-toggle {
 	background-color: #ff7f50;
 	border: none;
 	color: white;
-	padding: 15px 30px; /* Větší tlačítko */
-	font-size: 1.5rem; /* Větší písmo pro tlačítko */
+	padding: 15px 30px; Větší tlačítko 
+	font-size: 1.5rem; Větší písmo pro tlačítko 
 	border-radius: 30px;
 	cursor: pointer;
 	transition: background-color 0.3s ease, transform 0.2s ease;
@@ -48,7 +48,7 @@ header h1 {
 
 #theme-toggle:hover {
 	background-color: #ff5722;
-	transform: scale(1.1); /* Větší efekt zvětšení */
+	transform: scale(1.1); Větší efekt zvětšení 
 }
 
 .about {
@@ -66,7 +66,7 @@ header h1 {
 .about img {
 	border-radius: 50%;
 	margin-right: 40px;
-	width: 250px; /* Větší obrázek pro počítače */
+	width: 250px; Větší obrázek pro počítače 
 	transition: transform 0.4s ease;
 }
 
@@ -75,12 +75,12 @@ header h1 {
 }
 
 .bio h2 {
-	font-size: 2.5rem; /* Větší písmo pro nadpisy */
+	font-size: 2.5rem; Větší písmo pro nadpisy 
 	color: #282c34;
 }
 
 .bio h3 {
-	font-size: 1.5rem; /* Větší popisky */
+	font-size: 1.5rem; Větší popisky
 	color: #555;
 }
 
@@ -90,7 +90,7 @@ header h1 {
 }
 
 .skills h2 {
-	font-size: 3rem; /* Větší nadpisy sekcí */
+	font-size: 3rem; Větší nadpisy sekcí 
 	margin-bottom: 40px;
 	color: #282c34;
 }
@@ -104,7 +104,7 @@ header h1 {
 
 .language-icons img {
 	margin: 0 30px;
-	width: 80px; /* Větší ikony */
+	width: 80px; Větší ikony 
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -119,27 +119,27 @@ footer {
 	text-align: center;
 	padding: 20px 0;
 	position: relative;
-	font-size: 1.2rem; /* Větší text v patičce */
+	font-size: 1.2rem; Větší text v patičce 
 }
 
-/* MEDIA QUERIES PRO RESPONSIVNÍ DESIGN */
+MEDIA QUERIES PRO RESPONSIVNÍ DESIGN 
 
-/* Pro obrazovky menší než 768px (tablety a mobily) */
+Pro obrazovky menší než 768px (tablety a mobily) 
 @media (max-width: 768px) {
 
-	/* Header - změna velikosti textu */
+	 Header - změna velikosti textu
 	header h1 {
 		font-size: 2.5rem;
 	}
 
-	/* Přizpůsobení tlačítka */
+	Přizpůsobení tlačítka 
 	#theme-toggle {
 		font-size: 1rem;
 		padding: 10px 20px;
 		border-radius: 20px;
 	}
 
-	/* Sekce About - vertikální layout pro mobily */
+	Sekce About - vertikální layout pro mobily 
 	.about {
 		flex-direction: column;
 		text-align: center;
@@ -169,16 +169,15 @@ footer {
 		font-size: 2rem;
 	}
 }
-
-/* Pro obrazovky menší než 480px (mobily na výšku) */
+Pro obrazovky menší než 480px (mobily na výšku) 
 @media (max-width: 480px) {
 
-	/* Header - menší text na velmi malých obrazovkách */
+	Header - menší text na velmi malých obrazovkách
 	header h1 {
 		font-size: 2rem;
 	}
 
-	/* Tlačítko - menší velikost pro mobily */
+	Tlačítko - menší velikost pro mobily
 	#theme-toggle {
 		font-size: 0.9rem;
 		padding: 8px 16px;
@@ -203,7 +202,7 @@ footer {
 	}
 }
 
-/* Animace */
+Animace
 @keyframes slideInDown {
 	from {
 		transform: translateY(-100px);
@@ -245,7 +244,7 @@ footer {
 	transform: scale(1.1);
 }
 
-/* Specifické barvy pro jednotlivé sítě */
+Specifické barvy pro jednotlivé sítě
 .facebook {
 	background-color: #3b5998;
 }
@@ -278,7 +277,7 @@ footer {
 	background-color: #111;
 }
 
-/* Responzivní design */
+ Responzivní design
 @media (max-width: 768px) {
 	.social-buttons {
 		flex-direction: column;
@@ -293,6 +292,6 @@ footer {
 		padding: 10px 20px;
 	}
 }
-
+*/
 
 
